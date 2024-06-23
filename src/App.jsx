@@ -1,18 +1,19 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-// import './App.css'
 
+// TODO List
+// - Add Top Navigation
+//   - Spot for current reward amount (starts at 2000, every second that passes you lose 100)
+//
 function App() {
   const [gameMode, setGameMode] = useState("")
  
   return <div>
     <div className='underline bg-red-400'>Select Difficulty</div>
     <div>
-    <div>Jerry Mode (Easy)</div>
-    <div>Schwifty Mode (Medium)</div>
-    <div>Birdperson Mode (Intermediate)</div>
-    <div>Wubba Lubba Dub Dub Mode (Hard)</div>
+    <div onMouseDown={() => setGameMode("Jerry")}>Jerry Mode (Easy)</div>
+    <div onMouseDown={() => setGameMode("Schwifty")}>Schwifty Mode (Medium)</div>
+    <div onMouseDown={() => setGameMode("Birdperson")}>Birdperson Mode (Intermediate)</div>
+    <div onMouseDown={() => setGameMode("Wubba")}>Wubba Lubba Dub Dub Mode (Hard)</div>
     </div>
     </div>
 }
