@@ -6,7 +6,15 @@ import viteLogo from '/vite.svg'
 function App() {
   const [gameMode, setGameMode] = useState("")
  
-  return <div className='underline bg-red-400'>Hello World1</div>
+  return <div>
+    <div className='underline bg-red-400'>Select Difficulty</div>
+    <div>
+    <div>Jerry Mode (Easy)</div>
+    <div>Schwifty Mode (Medium)</div>
+    <div>Birdperson Mode (Intermediate)</div>
+    <div>Wubba Lubba Dub Dub Mode (Hard)</div>
+    </div>
+    </div>
 }
 
 export default App
